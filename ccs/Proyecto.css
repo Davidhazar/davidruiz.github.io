@@ -1,32 +1,65 @@
+*{
+    box-sizing: border-box;
+  }
 body{
+    background-image: url(/asse/oficina.png);
     margin: 0;
     font-family: 'Roboto Slab', serif;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
 }
+body:before{
+    content:"";
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    top: 0;
+    left:0;
     
+    background: radial-gradient(white,black);
+    opacity: 0.5;
+    z-index: -1;
+}
+header{
+    height: 55px;
+    align-items: center;
+    background-color:transparent;
+    justify-content: space-between;
+    
+}
 
 header .logo_nombre{
-    display: flex;
-    justify-content: space-between;
+    justify-content: space-between; 
     align-items: center;
-    background: #000000;
-    background: -moz-linear-gradient(left, #000000 0%, #7F7F7F 47%, #000000 100%);
-    background: -webkit-linear-gradient(left, #000000 0%, #7F7F7F 47%, #000000 100%);
-    background: linear-gradient(to right, #000000 0%, #7F7F7F 47%, #000000 100%);
-}
-header h2{
-    color: azure;
-    justify-content: baseline;
-    text-decoration:solid;
+    background: transparent;
+    display:flex; 
     
 }
+
 .logo_nombre img{
-    height: 80px;
-    border-radius: 50%;
+    height: 50px;
+    justify-content:space-between;
+    display: inline-flex;
+    align-items: center;
+    
 }
 a{
+    display:inline-block;
+    margin-left: 10px;
+    margin-right: 20px;
+    
+    align-items:center;
     text-decoration: none;
     color: #FFF;
-text-shadow: #FFF 0 -1px 4px, rgb(255, 255, 255) 0 -2px 10px, #dfdddb 0 -10px 20px, rgb(235, 230, 230) 0 -18px 40px;
+    
+}
+
+nav a:hover{
+    color: black;
+    align-items: center;
+    display:inline-block
 }
 
 
